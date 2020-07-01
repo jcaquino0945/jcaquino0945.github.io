@@ -1,0 +1,167 @@
+/* global */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body {
+  height: 1000px; /* change to auto later */
+ 
+}
+.header-container {
+    display: none;
+}
+.overlay {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) { /* for small devices */
+/* - =-=-=-=-=-=-=-=-=-=  FOR MOBILE NAVBAR =-=-=-=-=-=-=-=-=-=  */
+/* The Overlay (background) */  
+main {
+    padding-top: 12vh;
+}
+  .overlay {
+      display: block;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F4CB2A;
+    transition: 0.5s;
+    overflow: auto;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay-content p {
+margin-bottom: 2em;
+  }
+  .overlay a {
+    
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay-content a {
+     
+    padding: 1.3em .3em;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .social-media-icons-mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 1.5em 2em;
+  }
+  .social-media-icons-mobile a img {
+      height: 2em;
+width: 2em;
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    font-size: 1.6em ;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  /* shake effects for links */
+  .overlay a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  /* end of overlay css */
+  .header-container {
+      position: fixed;
+      display: flex;
+    background-color: #F4CB2A;
+    width: 100%;
+    height: 12vh;
+    border: .3em solid #F2EFE5;
+   
+}
+.header-container-logo {
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+.header-container-logo img {
+    margin-left: 15%;
+height: 100%;
+width: 5.5em;
+}
+.header-container-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+/* - =-=-=-=-=-=-=-=-=-= END FOR MOBILE NAVBAR =-=-=-=-=-=-=-=-=-=  */
+.mobile-cover {
+    height: 35vh;
+    background-image: url("/img/cover.png");
+    background-size: 100% 35vh;
+    background-repeat: no-repeat;
+}
+.products-mobile {
+    height: 60vh;
+    width: 100%;
+}
+}
+
+
+
