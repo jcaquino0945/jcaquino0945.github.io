@@ -126,6 +126,7 @@ body {
       color:#F4CB2A;
   }
   .motto-text {
+    color: #7F7F7F;
       line-height: 1.75em;
       display: inherit;
       justify-content: center;
@@ -166,22 +167,51 @@ margin:1em 0em 1em 2em;
   }
   .order-now-image img {
       height: 150%;
-      width: 110%;
+      width: 100%;
   }
   .contact-us {
-      display: 80vh;
-      display: flex;
+      height: auto;
+      display: block;
 flex-direction: column;
   }
   .contact-us-header {
+    color: #F4CB2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
       width: 100%;
   }
+  
+  .contact-us-flex {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+  }
   .contact-us-map {
-      width: 50%;
-      background-color: black;
+background-color: black;
+width: 60%;
   }
   .contact-us-text {
-      width: 50%;
+    background-color: #F4CB2A;
+    text-align: center;
+    width: 40%;
+  }
+  .contact-us-logo {
+    margin: 2em 2em .5em 2em;
+    height: 30%;
+  }
+  .contact-us-logo img {
+    height: 100%;
+    width: 60%;
+  }
+  .contact-us-text-details {
+    height: 55%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 
   
