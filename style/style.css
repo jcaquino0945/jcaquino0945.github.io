@@ -225,6 +225,8 @@ display: none;
     display: none;
   }
 .main {
+  overflow: hidden;
+  width: 100%;
 margin-left: 0;
 margin-top: 15vh;
 }
@@ -281,8 +283,8 @@ align-items: center;
 
 }
 .social-media-icons-mobile a img {
-height: 2em;
-width: 2em;
+height: 50%;
+width: 50%;
 }
 
 
@@ -337,7 +339,7 @@ background-color: #F4CB2A;
 width: 100%;
 height: 15vh;
 border: .3em solid #F2EFE5;
-
+border-right: 0em;
 }
 .header-container-logo {
 justify-content: center;
