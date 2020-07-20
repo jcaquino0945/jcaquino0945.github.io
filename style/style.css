@@ -23,6 +23,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.products-mobile {
+  display: none;
+}
 .logo {
     margin-top: 2em;
     display: inherit;
@@ -113,11 +116,12 @@ body {
 .motto {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: auto;
     text-align: center;
     padding: 3em;
 }
 .motto-h1 {
+  padding: 1.5em;
   height: 50%;
     display: inherit;
     justify-content: center;
@@ -126,6 +130,7 @@ body {
     color:#F4CB2A;
 }
 .motto-text {
+ 
   color: #7F7F7F;
     line-height: 1.75em;
     display: inherit;
@@ -172,7 +177,7 @@ padding: .5em 2.5em;
 .contact-us {
     height: auto;
     display: block;
-flex-direction: column;
+
 }
 .contact-us-header {
   color: #F4CB2A;
@@ -219,6 +224,11 @@ width: 60%;
 .header-container {
 display: none;
 }
+.mobile-about {
+  display: none;
+}
+
+
 @media only screen and (max-width: 720px) { /* for small devices */
 
   .sidenav {
@@ -360,4 +370,142 @@ align-items: center;
 width: 20%;
 height: 100%;
 }
+.cover {
+  height: 50vh;
+  background-size: 100% 50vh;
+}
+.products-mobile {
+  display: block;
+  text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 2em;
+  }
+  .products-mobile h1 {
+  color: #F4CB2A;
+  margin-bottom: 1em;
+  }
+  .products {
+    display: none;
+  }
+  .dot {
+    cursor: pointer;
+    height: .7em;
+    width: 10px;
+    margin: 1.3em 7px;
+    background-color: #c7c4c4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+    background-color: #F4CB2A;
+    }
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+    
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+    .info {
+      display: none;
+    }
+    .mobile-about {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color:#F4CB2A ;
+      padding: 1em;
+      color: white;
+      }
+      .mobile-about-1,.mobile-about-2,.mobile-about-3,.mobile-about-4 {
+      padding: 1em 0em;
+      margin: 0.5em;
+      line-height: 4em;
+      }
+      .mobile-about img {
+        height: 4em;
+        width: 4em;
+      }
+      .motto-h1 {
+        padding: .5em;
+        font-size: 1.3em;
+        margin-bottom: .8em;
+      }
+      .motto-text {
+        margin-bottom: .8em;
+      }
+      .order-now {
+        height: auto;
+        border: none;
+      }
+      .order-now-image {
+        display: none;
+      }
+      .order-now-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+      .order-now-text-child {
+        line-height: 1.5em;
+        margin: 3em 0em;
+      }
+    .order-now-text-child h1 {
+      
+      text-transform: uppercase;
+        padding: 0em 2.5em;
+        line-height: 1.5em;
+      word-break: normal;
+      }
+      .order-now-text-child p {
+        padding: 0em 4em;
+      }
+      #ordr1 {
+        margin-top: 5em;
+      }
+      #ordr2 {
+        margin-bottom: 6em;
+      }
+      .order-now-text-child a {
+        font-weight: lighter;
+      text-decoration: none;
+      color: white;
+      border: 3px solid white;
+      padding: .5em 2.3em;
+      font-size: 1.3em;
+      }
+      .contact-us-flex {
+flex-direction: column-reverse;
+height: auto;
+      }
+      .contact-us-map {
+        width: 100vw;
+        height: 50vh;
+      }
+      .contact-us-text {
+        width: 100%;
+        height: auto;
+      }
+      .contact-us-text-details {
+        height: 70vh;
+        padding: 0em 4em;
+      }
+      .contact-us-text-details p {
+        margin: 1em 0em 3em 0em;
+      }
+    
 }
