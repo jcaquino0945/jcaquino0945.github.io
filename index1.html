@@ -3,107 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorns | Home</title>
     <link href="style/style1.css" type="text/css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Document</title>
 </head>
 <body>
-    <div class="sidenav">
-        <div class="logo">
-        <a href="#"><img src="img/logo lorns.png" alt="logo"></a>
+    <!-- =-=-=-=-=-=-=-=-=-= FOR MOBILE NAVBAR =-=-=-=-=-=-=-=-=-= -->
+    <div id="myNav" class="overlay">    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Order Now</a>
+          <a href="#">Contact Us</a>
+          <div class="social-media-icons-mobile">
+              <a href="#"><img src="img/facebook (1).png" alt="facebook"></a>
+              <a href="#"><img src="img/instagram-sketched.png" alt="ig"></a>
+              <a href="#"><img src="img/whatsapp (1).png" alt="phone"></a>
+          </div>
+          <p>Copyright © 2020 Lorns Bakery</p>
         </div>
-        <div class="nav-options">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Order Now</a>
-        <a href="#">Contact Us</a>
-    </div>
-    <div class="nav-socials">
-        <a href="#"><img src="img/facebook (1).png" alt="facebook"></a>
-        <a href="#"><img src="img/instagram-sketched.png" alt="ig"></a>
-        <a href="#"><img src="img/whatsapp (1).png" alt="phone"></a>
-    </div>
-    <div class="nav-copyright">
-        <p>Copyright © 2020 Lorns Bakery</p>
-    </div>
       </div>
-      
-      <!-- Main -->
-      <div class="main">
-<div class="cover">
-    
+    </div>
+      <!-- overlay menu end -->
+      <header>
+          <div class="header-container">
+              <div class="header-container-logo">
+        <a href="#"><img src="img/logo lorns.png" alt="logo"></a>
+              </div>
+              <div class="header-container-burger">
+                
+                <span style="font-size:2em;cursor:pointer; color:white;" onclick="openNav()">&#9776;</span>
+              </div>
+          </div>
+        </header>
+            <!-- =-=-=-=-=-=-=-=-=-= END FOR MOBILE NAVBAR =-=-=-=-=-=-=-=-=-= -->
+            <main>
+            <!-- =-=-=-=-=-=-=-=-=-=  MOBILE CONTENT =-=-=-=-=-=-=-=-=-= -->
+<div class="mobile-cover">
+
 </div>
-<div class="products">
-    <div class="products-text">
-        <h1>Our Products</h1>
-    </div>
-    <div class="products-section">
-        <div class="products-section-img">
-            <img src="img/6.png">
-          </div>
-          <div class="products-section-img">
-            <img src="img/7.png">
-          </div>
-          <div class="products-section-img">
-            <img src="img/8.png">
-          </div>
-          <div class="products-section-img">
-            <img src="img/9.png">
-          </div>
-    </div>
-    </div>
-    <div class="info">
+<div class="products-mobile">
+  <h1>Our Products</h1>
+  <div class="mySlides fade">
+    <img src="img/classic banana.png" style="width:100%">
+  </div>
 
-    </div>
-    <div class="motto">
-        <div class="motto-h1">
-        <h1>Making life a little sweeter</h1>
-    </div>
-   <div class="motto-text">
-    <p>Our mission is to offer delicious food made by hand with love and all-natural ingredients, just as we would feed our own family. We guarantee that every purchase from Four Flours will give you “a bite of happiness” in every bite- and if you are unsatisfied for any reason, let us know so we can make it right!</p>
-   </div>
-        </div>
-        <div class="order-now">
-            <div class="order-now-text">
-        <div class="order-now-text-child">
-        <h1>Only the best for our customers</h1>
-        </div>
-        <div class="order-now-text-child">
-            <p>
-                We ensure that our products are consistent in taste and quality! Every banana bread we make is sure to
-                leave you wanting more
-            </p>
-        </div>
-        <div class="order-now-text-child">
-            <a href="#">ORDER NOW</a></div>
-        </div>
-        <div class="order-now-image">
-            <img src="img/banana cake.png" alt="banana cake">
-        </div>
-            </div>
-        <div class="contact-us">
-            <div class="contact-us-header">
-                <h1>Contact Us</h1>
-            </div>
-            <div class="contact-us-flex">
-            <div class="contact-us-map">
+  <div class="mySlides fade">
+    <img src="img/choco loco.png" style="width:100%">
+  </div>
 
-            </div>
-            <div class="contact-us-text">
-                <div class="contact-us-logo">
-                    <a href="#"><img src="img/logo lorns.png" alt="logo"></a>
-                    </div>
-                    <div class="contact-us-text-details">
-                <p>72 Northwood Street, Bridgestone Drive
-                    <br> Pasig City.</p>
-                <p>+63 945 320 2762
-                    <br>+63 917 114 5615</p>
-                <p>Store Hours:<br> Monday-Sunday: 8:00AM – 3:00PM</p>
-                <p>jcaquino0945@gmail.com</p>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>  
+  <div class="mySlides fade">
+    <img src="img/cream cheese banana.png" style="width:100%">
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+<div class="mobile-about">
+<div class="mobile-about-1">
+<h1>O</h1>
+<p>Lorem ipsum dolor sit.</p>
+</div>
+<div class="mobile-about-2">
+<h1>O</h1>
+<p>Lorem ipsum dolor sit.</p>
+</div>
+<div class="mobile-about-3">
+<h1>O</h1>  
+<p>Lorem ipsum dolor sit.</p>
+</div>
+<div class="mobile-about-4">
+<h1>O</h1>  
+<p>Lorem ipsum dolor sit.</p>
+</div>
+</div>
+<div class="mobile-mission"> <!-- this is responsive -->
+<h1>Making life a little sweeter</h1>
+<p>Our mission is to offer delicious food made by hand with love and all-natural ingredients, just as we would feed our own family. We guarantee that every purchase from Four Flours will give you “a bite of happiness” in every bite- and if you are unsatisfied for any reason, let us know so we can make it right!</p>
+</div>
+<div class="order">
+  <div class="order-text"> <h1>
+    Only the best for our customers
+  </h1>
+  <p>
+   We ensure that our products are consistent in taste and quality! Every banana bread we make is sure to
+   leave you wanting more
+  </p>
+  <a href="#">ORDER NOW</a></div>
+  <div class="order-image">   <img src="img/banana cake.png" alt="banana cake"></div>
+</div>
+<div class="contact">
+  <div class="contact-text">
+    <h1>Contact Us</h1>
+  </div>
+  <div class="contact-details">
+    <div class="contact-details-img">  <h1>img</h1></div>
+  <div class="contact-details-text"> <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing.</p>
+    <p>Lorem, ipsum dolor.</p></div>
+   
+  </div>
+  <div class="contact-map">
+     
+  </div>
+</div>
+
+            <!-- =-=-=-=-=-=-=-=-=-=  END FOR MOBILE CONTENT =-=-=-=-=-=-=-=-=-= -->
+        </main>
+            
+     
+     
+
+      <script src="js/overlaymenu.js"></script> <!-- script for overlay menu -->
 </body>
 </html>
