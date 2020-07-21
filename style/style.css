@@ -203,6 +203,9 @@ body {
     line-height: 1.5em;
 margin:1em 0em 1em 2em;
 }
+.order-now-text-child h1 {
+line-height: 1.1em;
+}
 .order-now-text-child a {
   transition: .5s all;
   font-weight: lighter;
